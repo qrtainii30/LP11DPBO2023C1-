@@ -20,11 +20,11 @@ class FormPasien implements KontrakPasienView
 		$data = null;
 		$data .= '<form method="post" action="tambah.php">
 		<div class="container mt-5">
-		  <div class="card">
+		  <div>
 			<div class="card-header">
-      <h1 class="text-white text-center">Tambah Pasien</h1>
+      <h1 class="text-black text-center">Tambah Pasien</h1>
     </div>
-			<div class="card-body">
+			<div >
 			  <div class="form-group">
 				<label for="nik">NIK:</label>
 				<input type="text" name="nik" class="form-control" required>
@@ -81,11 +81,11 @@ class FormPasien implements KontrakPasienView
 		$data = null;
 		$data .= '<form method="post" action="tambah.php">
 		<div class="container mt-5">
-		  <div class="card">
+		  <div>
 			<div class="card-header">
-      <h1 class="text-white text-center">Update Pasien</h1>
+      <h1 class="text-black text-center">Update Pasien</h1>
     </div>
-			<div class="card-body">
+			<div >
 			  <div class="form-group">
         <input type="hidden" name="id" value="' . $this->prosespasien->getId($id) . '" >
 				<label for="nik">NIK:</label>
