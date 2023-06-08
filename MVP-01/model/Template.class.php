@@ -9,18 +9,12 @@ class Template{
 	var $content = ''; // handle isi file
 
 	function __construct($filename = ''){
+		// konstruktor
 		$this->filename = $filename;
-	
+
 		// membaca file tampilan
-		$fileContent = @file($filename);
-		if ($fileContent !== false) {
-			$this->content = implode('', $fileContent);
-		} else {
-			// Penanganan kesalahan jika file tidak dapat dibaca
-			echo "Tidak dapat membaca file: $filename";
-		}
+		$this->content = implode('', @file($filename));
 	}
-	
 
 	function clear(){
 		// membersihkan isi kode yang seharusnya diganti
