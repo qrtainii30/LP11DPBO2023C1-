@@ -1,10 +1,10 @@
 <?php
 
 
-include_once("KontrakView.php");
+include_once("kontrak/KontrakPasien.php");
 include_once("presenter/ProsesPasien.php");
 
-class FormPasien implements KontrakView
+class FormPasien implements KontrakPasienView
 {
 	private $prosespasien; //presenter yang dapat berinteraksi langsung dengan view
 	private $tpl;

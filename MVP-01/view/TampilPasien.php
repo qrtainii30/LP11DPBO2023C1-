@@ -32,7 +32,7 @@ class TampilPasien implements KontrakPasienView
 			<td>" . $this->prosespasien->getGender($i) . "</td>
 			<td>" . $this->prosespasien->getEmail($i) . "</td>
 			<td>" . $this->prosespasien->getTelp($i) . "</td>
-			<td><a href='add.php?id=" . $i . "'><button type='button' class='btn btn-success text-white'>Update</button></a>
+			<td><a href='tambah.php?id=" . $i . "'><button type='button' class='btn btn-success text-white'>Update</button></a>
 			<a href='index.php?hapus=" . $this->prosespasien->getId($i) . "'><button type='button' class='btn btn-danger'>Delete</button></a></td>
 			</tr>";
 		}
@@ -44,5 +44,10 @@ class TampilPasien implements KontrakPasienView
 
 		// Menampilkan ke layar
 		$this->tpl->write();
+	}
+
+	function delete($id)
+	{
+		$this->prosespasien->deleteData($id);
 	}
 }
