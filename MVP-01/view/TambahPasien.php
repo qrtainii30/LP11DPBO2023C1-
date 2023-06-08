@@ -117,8 +117,8 @@ class FormPasien implements KontrakPasienView
 			  </div>
 			</div>
 			<div class="card-footer">
-			  <button class="btn btn-success" type="submit" name="update">Update</button>
-			  <button class="btn btn-danger" type="reset">Cancel</button>
+			  <button class="btn btn-success" type="submit" name="update">Perbarui</button>
+			  <button class="btn btn-danger" type="reset">Batalkan</button>
 			</div>
 		  </div>
 		</div>
