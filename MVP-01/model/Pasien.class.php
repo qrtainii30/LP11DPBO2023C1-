@@ -47,6 +47,15 @@ class Pasien
 	{
 		$this->gender = $gender;
 	}
+	function setEmail($email)
+	{
+		$this->email = $email;
+	}
+	function setTelp($telp)
+	{
+		$this->telp = $telp;
+	}
+
 
 	function getId()
 	{
@@ -71,5 +80,13 @@ class Pasien
 	function getGender()
 	{
 		return $this->gender;
+	}
+	function getEmail()
+	{
+		return $this->email;
+	}
+	function getTelp()
+	{
+		return $this->telp;
 	}
 }

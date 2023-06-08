@@ -38,7 +38,8 @@ class ProsesPasien implements KontrakPasienPresenter
 				$pasien->setTempat($row['tempat']); //mengisi tempat
 				$pasien->setTl($row['tl']); //mengisi tl
 				$pasien->setGender($row['gender']); //mengisi gender
-
+				$pasien->setEmail($row['email']); 
+				$pasien->setTelp($row['telp']);
 
 				$this->data[] = $row; //tambahkan data pasien ke dalam list
 			}
@@ -78,6 +79,16 @@ class ProsesPasien implements KontrakPasienPresenter
 	{
 		//mengembalikan gender Pasien dengan indeks ke i
 		return $this->data[$i]['gender'];
+	}
+	function getEmail($i)
+	{
+		//mengembalikan email Pasien dengan indeks ke i
+		return $this->data[$i]['email'];
+	}
+	function getTelp($i)
+	{
+		//mengembalikan telp Pasien dengan indeks ke i
+		return $this->data[$i]['telp'];
 	}
 	function getSize()
 	{

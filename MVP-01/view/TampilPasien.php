@@ -29,7 +29,12 @@ class TampilPasien implements KontrakPasienView
 			<td>" . $this->prosespasien->getNama($i) . "</td>
 			<td>" . $this->prosespasien->getTempat($i) . "</td>
 			<td>" . $this->prosespasien->getTl($i) . "</td>
-			<td>" . $this->prosespasien->getGender($i) . "</td>";
+			<td>" . $this->prosespasien->getGender($i) . "</td>
+			<td>" . $this->prosespasien->getEmail($i) . "</td>
+			<td>" . $this->prosespasien->getTelp($i) . "</td>
+			<td><a href='add.php?id=" . $i . "'><button type='button' class='btn btn-success text-white'>Update</button></a>
+			<a href='index.php?hapus=" . $this->prosespasien->getId($i) . "'><button type='button' class='btn btn-danger'>Delete</button></a></td>
+			</tr>";
 		}
 		// Membaca template skin.html
 		$this->tpl = new Template("templates/skin.html");
