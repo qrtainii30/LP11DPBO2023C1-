@@ -12,6 +12,23 @@
 
   <title>To Do List</title>
 </head>
+<style>
+  .form-input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .form-input label {
+      text-align: center;
+      margin-bottom: 5px; /* Adjust margin as desired */
+  }
+
+  .form-input input {
+      text-align: center;
+      width: 200px; /* Adjust width as desired */
+  }
+</style>
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,43 +42,17 @@
   <br />
   <br />
 
-  <div style="margin-left: 5%">
-    <div class="col-1 my-3">
-      <a type="button" class="btn btn-primary" href="add.php">Tambah Pasien</a>
-    </div>
-
+  <div style="margin-left:40%">
+    <br>
     <!-- Tabel 1 -->
     <div style="display: inline-block; ">
-      <h3>TABEL PASIEN</h3>
+      <h3>DATA PASIEN</h3>
       <!-- TABEL1 -->
-
-      <table align="left" border="1" class="table" style="text-align: center;">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">NO</th>
-            <th scope="col">NIK</th>
-            <th scope="col">NAMA</th>
-            <th scope="col">TEMPAT</th>
-            <th scope="col">TANGGAL LAHIR</th>
-            <th scope="col">GENDER</th>
-            <th scope="col">EMAIL</th>
-            <th scope="col">NO. TELEPON</th>
-            <th scope="col">AKSI</th>
-          </tr>
-        </thead>
-        <tr>
-
-          DATA_TABEL
-        </tr>
-
-      </table>
-
+      <div>
+        DATA_FORM
+      </div>
       <br>
-
-
     </div>
-
-
   </div>
 
   <!-- Optional JavaScript -->

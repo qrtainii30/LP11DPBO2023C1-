@@ -12,8 +12,10 @@ class Pasien
 	var $tempat = '';
 	var $tl = '';
 	var $gender = '';
+	var $email = '';
+	var $telp = '';
 
-	function __construct($id = '', $nik = '', $nama = '', $tempat = '', $tl = '', $gender = '')
+	function __construct($id = '', $nik = '', $nama = '', $tempat = '', $tl = '', $gender = '', $email = '', $telp = '')
 	{
 		$this->id = $id;
 		$this->nik = $nik;
@@ -21,6 +23,8 @@ class Pasien
 		$this->tempat = $tempat;
 		$this->tl = $tl;
 		$this->gender = $gender;
+		$this->email = $email;
+		$this->telp = $telp;
 	}
 
 	function setId($id)
