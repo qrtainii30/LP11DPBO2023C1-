@@ -4,6 +4,7 @@
 Saya Qurrotu Ainii NIM 2105885 mengerjakan soal Latihan Praktikum 11 dalam mata kuliah Desain dan Pemrograman Berorientasi Objek untuk keberkahannya maka saya tidak melakukan kecurangan seperti yang telah dispesifikasikan. Aamiin.
 
 ## Desain Program
+![image](https://github.com/qrtainii30/LP11DPBO2023C1-/assets/119904110/bc53e0eb-0af4-4214-8920-b2db585a9bc1)
 
 ## Alur Program
 
